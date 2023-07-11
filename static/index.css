@@ -1,0 +1,103 @@
+.heading5 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  width: 388px;
+  height: 46px;
+  flex-shrink: 0;
+}
+.menu-li,
+.sidepanetop {
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+.sidepanetop {
+  width: 462px;
+  height: 167px;
+  padding: 20px 15px;
+  justify-content: flex-start;
+  gap: 18px;
+  margin-left: 20px;
+}
+.menu-li {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-60xl);
+  background-color: var(--color-cornflowerblue);
+  border-radius: var(--br-5xs);
+  width: 380px;
+  height: 63px;
+  justify-content: center;
+}
+.table-data {
+  margin: 0;
+  position: relative;
+  font-size: var(--font-size-9xl);
+  font-weight: 700;
+  font-family: var(--font-nunito-sans);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  width: 221px;
+  height: 39px;
+  flex-shrink: 0;
+  text-decoration:none
+}
+.lin{
+  text-decoration:none;
+}
+.menu {
+  background-color: #474a53;
+  width: 462px;
+  height: 827px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 46px 44px 314px 38px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  /* justify-content: flex-end; */
+  gap: 38px;
+}
+.column1,
+.column2 {
+  position: absolute;
+  overflow: scroll;
+}
+.column1 {
+  top: 15px;
+  left: 16px;
+  background-color: var(--color-white);
+  /* width: 462px; */
+  /* height: 992px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.column2 {
+  top: 18px;
+  left: 493px;
+  background-color: var(--color-darkslateblue);
+  width: 100%;
+  height: 100%;
+}
+.mainpage {
+  position: relative;
+  background-color: #f4f9fd;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: #0a1629;
+  font-family: var(--font-nunito-sans);
+}

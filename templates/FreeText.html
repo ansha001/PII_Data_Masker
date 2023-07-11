@@ -1,0 +1,43 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{% static 'global.css' %}" />
+    <link rel="stylesheet" href="{%static 'FreeText.css'%}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito Sans:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <button class="free-text" autofocus>
+      <h3 class="heading3">
+        <b class="free-text-de-identification">Free Text De-Identification</b>
+      </h3>
+      <form action="/free-text/" method="post">
+        {% csrf_token %}
+        <button class="export6" style="position:absolute;left:60px;top:115px;height:4% " name="mask">
+          <p class="export7">Mask</p>
+        </button>
+        <button class="export6" style="position:absolute;left:300px;top:115px;height:4%" name="obfuscate">
+          <p class="export7">Obfuscate</p>
+        </button>
+        <div class="input3">
+          <h3 class="input-window3">Input Window</h3>
+          <textarea class="inputframe3" type="text" name="freetextinput">{{ input_text }} </textarea>
+        </div>
+      </form>
+      <div class="output3">
+        <h3 class="input-window3">Output Window</h3>
+        <div class="inputframe3" style="font-size:16px;line-height: 1.5 ; padding-left: 10px; color:black">{{ output_text|safe|linebreaksbr }}</div>
+      <button class="export6">
+        <p class="export7">Export</p>
+      </button>
+    </button>
+  </body>
+</html>
+{% endblock content %}

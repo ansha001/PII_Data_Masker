@@ -1,0 +1,45 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{%static "global.css" %}" />
+    <link rel="stylesheet" href="{%static "Detection.css" %}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito Sans:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <button class="detection" autofocus>
+      <h3 class="heading4">
+        <b class="documenttext-type-detection">Text / Document Categorization</b>
+      </h3>
+      
+      <form action="/textinput/" method="get">
+        <div class="input4">
+          <h3 class="text-detection">Text Detection</h3>
+            <textarea class="inputframe4" name="text_input" type="text" >{{ text_input }}</textarea>
+        </div>
+          <button class="categorizebutton" type="submit" autofocus>
+            <p class="categorize">Categorize</p>
+          </button>
+      </form>
+      <h3 class="text-type-detected">Text Type Detected: {{result1}}</h3>
+
+      <h3 class="document-detection">Document Detection</h3>
+      <form action="/fileinput/" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input class="uploadbutton3" name="file" type="file" autofocus />
+        <button class="categorizebutton1" type="submit" autofocus>
+          <p class="categorize1">Categorize</p>
+        </button>
+      </form>
+      <h3 class="document-type-detected">Document Type Detected: {{result2}}</h3>
+    </button>
+  </body>
+</html>
+{% endblock content %}

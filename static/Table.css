@@ -1,0 +1,110 @@
+.table-text-de-identification {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  display: inline-block;
+  width: 811px;
+  height: 76px;
+}
+.heading1,
+.uploadbutton1 {
+  position: absolute;
+  left: 56px;
+  overflow: hidden;
+}
+.heading1 {
+  margin: 0;
+  top: 55px;
+  width: 811px;
+  height: 74px;
+  font-size: var(--font-size-11xl);
+  font-family: inherit;
+}
+.uploadbutton1 {
+  top: 129px;
+  background-color: var(--color-darkseagreen);
+  width: 268px;
+  height: 59px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-5xs);
+  box-sizing: border-box;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.input-window1 {
+  margin: 0;
+  position: absolute;
+  top: -5px;
+  left: -2px;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  width: 814px;
+  height: 51px;
+}
+.input1,
+.inputframe1,
+.output1 {
+  position: absolute;
+  overflow: hidden;
+}
+.inputframe1 {
+  top: 41px;
+  left: -2px;
+  background-color: var(--color-white);
+  width: 814px;
+  height: 304px;
+}
+.input1,
+.output1 {
+  top: 245px;
+  left: 55px;
+  width: 812px;
+  height: 345px;
+}
+.output1 {
+  top: 679px;
+}
+.export3 {
+  margin: 0;
+  position: relative;
+  font-size: var(--font-size-9xl);
+  font-weight: 700;
+  font-family: var(--font-nunito-sans);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  width: 130px;
+  height: 37px;
+  flex-shrink: 0;
+}
+.export2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-10xl);
+  background-color: var(--color-cornflowerblue);
+  position: absolute;
+  top: 1104px;
+  left: 639px;
+  width: 228px;
+  height: 65px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: flex-end;
+  justify-content: center;
+}
+.table {
+  position: relative;
+  background-color: var(--color-darkslateblue);
+  width: 100%;
+  height: 1358px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: var(--color-white);
+  font-family: var(--font-nunito-sans);
+}

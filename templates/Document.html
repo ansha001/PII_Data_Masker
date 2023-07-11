@@ -1,0 +1,49 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{% static 'global.css' %}" />
+    <link rel="stylesheet" href="{%static 'Document.css'%}" />
+    <link rel="stylesheet" href="{%static 'FreeText.css'%}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito Sans:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="document">
+      <h3 class="heading2">
+        <b class="document-text-de-identificatio"
+          >Document De-Identification</b
+        >
+      </h3>
+      <div class="input2">
+        <h3 class="input-window2">Input Window</h3>
+        <textarea class="inputframe2">{{ input_text }}</textarea>
+      </div>
+      <div class="output2">
+        <h3 class="input-window2">Output Window</h3>
+        <div class="inputframe2" style="font-size: 16px;line-height: 1.5;padding-left: 10px; color:black">{{ output_text|safe|linebreaksbr }}</div>
+      </div>
+      <button class="export4" autofocus>
+        <p class="export5">Export</p>
+      </button>
+        <form action="{% url 'document' %}" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <input class="uploadbutton2" type="file" name="documentinput" autofocus />
+          <button class="export6" style="position:absolute;left:400px;top:200px;height:3% " name="mask">
+            <p class="export7">Mask</p>
+          </button>
+          <button class="export6" style="position:absolute;left:650px;top:200px;height:3%" name="obfuscate">
+            <p class="export7">Obfuscate</p>
+          </button>
+        </form>
+    </div>
+  </body>
+</html>
+{% endblock content %}

@@ -1,0 +1,203 @@
+text= """John visited New York last week. He works at Microsoft, which is located in Redmond. The meeting is scheduled for Monday."""
+
+text = """
+Please follow up with Dr. Smith for further information. John visited New York last week.
+He works at Microsoft, which is located in Redmond. The meeting is scheduled for Monday.
+The possibilities have increased since 2014, especially compared to2012, hè Kees? The system has
+different functions to manipulate data.
+The date is 12–01–2021 (or 12 jan 2021 or 12 januari 2021).
+You can reach me at SarahJ@gmail.com and I live in Rotterdam. My address is Maasstraat 13, 
+1234AB. My name is Thomas de Vries and I have Acne. Oh, I use ranitidine for this.
+"""
+
+
+text1 = "Please contact Dr. Lee for more information about the upcoming surgery. Mary visited Los Angeles last week. She works at Google, which is located in Mountain View. The presentation is scheduled for Thursday. The market has been volatile since the pandemic began, especially in the travel industry. The software has several features to optimize performance. The date is 05/25/2023 (or May 25, 2023). You can reach me at johnsmith@email.com and I live in San Francisco. My address is 123 Main St, Apt 456, 94123. My name is Sarah Jones and I have allergies. I use Claritin for this."
+
+text2 = "Please follow up with Dr. Patel for further instructions. Tom visited Miami last month. He works at Amazon, which is located in Seattle. The interview is scheduled for Friday. The demand for electric vehicles has increased significantly over the past decade, especially in Europe. The program has various tools to analyze data. The date is 05/25/2023 (or May 25th, 2023). You can reach me at johndoe@email.com and I live in New York City. My address is 456 Broadway, 10001. My name is Emily Smith and I have diabetes. I use insulin for this."
+
+text3 = "Please contact Dr. Kim for more information about theupcoming procedure. Susan visited Chicago last week. She works at Apple, which is located in Cupertino. The training session is scheduled for Wednesday. The market has been fluctuating since the trade war began, especially in the tech industry. The software has numerous features to improve user experience. The date is 05/25/2023 (or May 25, 2023). You can reach me at janedoe@email.com and I live in Boston. My address is 789 Main St, Apt 123, 02116. My name is Michael Johnson and I have high blood pressure. I use lisinopril for this."
+
+text4 = "Please follow up with Dr. Gupta for further details. David visited Las Vegas last month. He works at Facebook, which is headquartered in Menlo Park. The conference is scheduled for Tuesday. The popularity of online shopping has increased dramatically over the past few years, especially during the pandemic. The app has many tools to enhance productivity. The date is 05/25/2023 (or May 25th, 2023). You can reach me at katejones@email.com and I live in Los Angeles. My address is 2345 Wilshire Blvd, Apt 567, 90057. My name is Alex Garcia and I have asthma. I use albuterol for this."
+
+text5 = "Please contact Dr. Singh for more information about the upcoming test. Sarah visited Atlanta last week. Sheworks at Tesla, which is located in Palo Alto. The workshop is scheduled for Thursday. The use of renewable energy has increased significantly in recent years, especially solar and wind power. The platform has a variety of features to streamline workflow. The date is 05/25/2023 (or May 25, 2023). You can reach me at davidbrown@email.com and I live in Seattle. My address is 567 Pine St, Apt 890, 98101. My name is Samantha Lee and I have migraines. I use sumatriptan for this."
+
+text6 = "Please follow up with Dr. Hernandez for further instructions. Emily visited Dallas last month. She works at Netflix, which is headquartered in Los Gatos. The webinar is scheduled for Friday. The trend towards remote work has accelerated since the pandemic began, especially in the tech industry. The program has numerous functions to analyze data. The date is 05/25/2023 (or May 25th, 2023). You can reach me at johndoelaw@email.com and I live in Washington D.C. My address is 1234 Pennsylvania Ave, NW, 20004. My name is Rachel Kim and I have anxiety. I use sertraline for this."
+
+text7 = "Please contact Dr. Martinez for more information about the upcoming surgery. Michael visited San Diego last week. He works at Uber, which is headquartered in San Francisco. The meeting isscheduled for Monday. The use of artificial intelligence has increased dramatically in recent years, especially in the financial industry. The software has a range of features to increase efficiency. The date is 05/25/2023 (or May 25, 2023). You can reach me at sarahbrown@email.com and I live in Austin. My address is 3456 Congress Ave, 78704. My name is Peter Chen and I have high cholesterol. I use atorvastatin for this."
+
+text8 = "Please follow up with Dr. Rodriguez for further details. Lisa visited Boston last month. She works at LinkedIn, which is headquartered in Sunnyvale. The presentation is scheduled for Wednesday. The growth of e-commerce has been significant in recent years, especially during the holiday season. The application has several tools to facilitate communication. The date is 05/25/2023 (or May 25th, 2023). You can reach me at johndoe123@email.com and I live in Denver. My address is 7896 Colfax Ave, 80220. My name is Maria Hernandez and I have arthritis. I use ibuprofen for this."
+
+text9 = "Please contact Dr. Nguyen for more information about the upcoming procedure. Kevin visited Portland last week. He works at Airbnb, which is headquartered in San Francisco. The seminar is scheduled for Thursday. The adoption of blockchain technology has been increasing in recent years, especially in the financial andsupply chain sectors. The system has various features to manage data. The date is 05/25/2023 (or May 25, 2023). You can reach me at johndoe456@email.com and I live in Miami. My address is 1234 Ocean Drive, Apt 567, 33139. My name is Jessica Park and I have allergies. I use Zyrtec for this."
+
+text10 = "Please follow up with Dr. Brown for further instructions. Mark visited Seattle last month. He works at Twitter, which is headquartered in San Francisco. The conference is scheduled for Tuesday. The trend towards sustainable living has been growing in recent years, especially in urban areas. The platform has numerous features to enhance collaboration. The date is 05/25/2023 (or May 25th, 2023). You can reach me at janedoe456@email.com and I live in Chicago. My address is 567 Lake Shore Drive, Apt 890, 60611. My name is Eric Kim and I have high blood pressure. I use losartan for this."
+text11 ="""Medical Sample Report:
+
+Patient Name: John Doe
+Date of Birth: 01-15-1980
+Medical Record Number: MRN123456
+Visit Date: 05-20-2023
+Doctor: Dr. Smith
+Diagnosis: Hypertension
+Treatment Plan: Start medication and regular check-ups.
+
+Please follow up with Dr. Smith for further information.John visited New York last week.
+He works at Microsoft, which is located in Redmond. The meeting is scheduled for Monday.
+The possibilities have increased since 2014, especially compared to2012, hè Kees? The system has
+different functions to manipulate data.
+The date is 12–01–2021 (or 12 jan 2021 or 12 januari 2021).
+You can reach me at nam@provider.com and I live in Rotterdam. My address is Maasstraat 13, 
+1234AB. My name is Thomas de Vries and I have Acne. Oh , I use ranitidine for this.
+
+Thank you."""
+
+text = """
+Patient name: John Doe
+Date of Birth: 01/15/1980
+Medical Record Number: AB12345678
+Social Security Number: 123-45-6789
+Health Plan Beneficiary Number: 9876543210
+Account Number: 0123456789
+Certificate/License Number: XYZ123456
+Vehicle Identifier: ABC123
+Device Identifier: DEF789
+Web URL: https://example.com
+IP Address: 192.168.0.1
+Biometric Identifier: Fingerprint
+Full Face Photographic Image: [IMAGE]
+Any Unique Identifying Number: 98765
+Finger or Voiceprints: [REDACTED]
+Employer Identifier: EIN987654
+DNA Sequence: [REDACTED]
+Telephone Number: (555) 123-4567
+Email: john.doe@example.com
+The possibilities have increased since 2014, especially compared to 2012, hè Kees? The system has different functions to manipulate data.
+The date is 12–01–2021 (or 12 jan 2021 or 12 januari 2021).
+You can reach me at nam@provider.com and I live in Rotterdam. My address is Maasstraat 13, 1234AB.
+My name is Thomas de Vries and I have Acne. Oh, I use ranitidine for this.
+"""
+
+
+text1 ="""Patient Name: John Smith
+Age: 35
+Diagnosis: Acute bronchitis
+
+Mr. Smith presented to the clinic with a cough, chest tightness, and shortness of breath. Upon examination, he was found to have wheezing and rhonchi in both lungs. A chest X-ray was ordered and showed no signs of pneumonia. Based on his symptoms and physical exam findings, Mr. Smith was diagnosed with acute bronchitis. He was prescribed an albuterol inhaler and advised to rest and increase his fluid intake. Follow-up was scheduled for one week."""
+
+text="""Patient Name: David Lee
+Age: 65
+Diagnosis: Acute myocardial infarction
+
+Mr. Lee was brought to the emergency department with chest pain that started suddenly and persisted for over an hour. An electrocardiogram (ECG) was performed which showed ST elevation in leads II, III, and aVF. A cardiac enzyme panel was ordered and showed elevated levels of troponin I. Based on these findings, Mr. Lee was diagnosed with an acute myocardial infarction. He was immediately started on aspirin, heparin, and a beta-blocker, and was taken to the cardiac catheterization lab for percutaneous coronary intervention (PCI). The procedure was successful in restoring blood flow to the occluded coronary artery. Mr. Lee was monitored in the intensive care unit for 48 hours and was eventually discharged with a prescription for dual antiplatelet therapy and lifestyle modifications. Follow-up was scheduled with a cardiologist."""
+
+text ="""
+Patient Name: Sarah Johnson
+Age: 45
+Address: 123 Main Street
+City: Anytown
+State: California
+Zip Code: 90210
+Phone: (555) 555-1212
+Email: sarah.johnson@example.com
+Occupation: Teacher
+Marital Status: Married
+Number of Children: 2
+
+Chief Complaint: Chronic back pain
+
+History of Present Illness: Mrs. Johnson is a 45-year-old female who presents with chronic, low back pain that has been ongoing for the past six months. She reports the pain is constant, dull, and achy, and is located in the lower lumbar region. The pain is exacerbated by prolonged sitting or standing and is relieved by lying down. She denies any recent trauma or injury. Mrs. Johnson has tried over-the-counter pain medications and physical therapy with no significant relief.
+
+Past Medical History: Mrs. Johnson has a history of hypertension, for which she takes lisinopril. She also has a history of depression and anxiety, for which she takes sertraline. She has no history of surgeries or hospitalizations.
+
+Social History: Mrs. Johnson is a non-smoker and drinks alcohol occasionally.Family History: Mrs. Johnson's mother has a history of osteoarthritis, and her father had a heart attack in his 50s.
+
+Physical Exam: Mrs. Johnson is in no acute distress. Her vital signs are stable. On physical exam, she has tenderness to palpation over the lower lumbar spine. She has no motor or sensory deficits and her reflexes are intact.
+
+Assessment and Plan: Based on Mrs. Johnson's history and physical exam findings, she is diagnosed with chronic low back pain. She will be referred to a pain management specialist for further evaluation and treatment. In the meantime, she will be prescribed a nonsteroidal anti-inflammatory medication for pain relief. She will also be advised to continue with physical therapy and to avoid prolonged sitting or standing. Follow-up will be scheduled in two weeks to monitor her progress."""
+
+text ="""
+Patient Name: Michael Nguyen
+Age: 32
+Address: 456 Oak Street
+City: Anytown
+State: New York
+Zip Code: 10001
+Phone: (555) 555-1234
+Email: michael.nguyen@example.com
+Occupation: Software Engineer
+Marital Status: Single
+
+Chief Complaint: Sore throat and fever
+
+History of Present Illness: Mr. Nguyen is a 32-year-old male who presents with a sore throat and fever that started two days ago. He reports a temperature of 101°F and a sore throat that is worse with swallowing. He also reports a mild headache and body aches, but no cough or congestion. He denies any recent travel or exposure to sick contacts.
+
+Past Medical History: Mr. Nguyen has no significant past medical history and takes no medications.
+
+Social History: Mr. Nguyen is a non-smoker and drinks alcohol occasionally.
+
+Family History: Mr. Nguyen has no significant family history of medical problems.
+
+Physical Exam: Mr. Nguyen appears uncomfortable due to his sore throat and fever. His vital signs are as follows: temperature 101°F, heart rate 90 beats per minute, respiratory rate 18 breaths per minute, blood pressure 120/80 mmHg, and oxygen saturation 98% on room air. On examination, his oropharynx is erythematous and swollen, with no exudate or tonsillar enlargement noted. His neck is supple with no lymphadenopathy. Lungs are clear to auscultation bilaterally. Heart sounds are regular with no murmurs, rubs, or gallops.
+
+Assessment and Plan: Based on Mr. Nguyen's history and physical exam findings, he is diagnosed with acute pharyngitis. A rapid strep test is ordered and comes back negative. He is advised to rest, increase his fluid intake, and take acetaminophen or ibuprofen as needed for fever and pain relief. He is also prescribed a throat lozenge for symptomatic relief. Follow-up is scheduled in one week to monitor his progress. If his symptoms worsen or he develops new symptoms, he is instructed to seek medical attention."""
+
+text_sample ="""
+
+Patient Name: Jane Smith
+Age: 28
+
+Chief Complaint: Abdominal pain
+
+History of Present Illness: Ms. Smith is a 28-year-old female who presents with severe abdominal pain that started suddenly earlier today. The pain is located in the right lower quadrant and is accompanied by nausea and vomiting. She denies any fever or diarrhea.
+
+Past Medical History: Ms. Smith has no significant past medical history and takes no medications.
+
+Social History: Ms. Smith is a non-smoker and drinks alcohol occasionally.
+
+Family History: Ms. Smith has no significant family history of medical problems.
+
+Physical Exam: Ms. Smith appears uncomfortable and is lying still on the exam table. Her vital signs are stable. On physical exam, she has severe tenderness to palpation in the right lower quadrant with guarding and rebound tenderness. Bowel sounds are diminished.
+
+Assessment and Plan: Based on Ms. Smith's history and physical exam findings, she is diagnosed with acute appendicitis. She will be referred to a surgeon for further evaluation and treatment. In the meantime, she will be given nothing by mouth and will be started on intravenous fluids and broad-spectrum antibiotics. She will be prepared for surgery and taken to the operating room as soon as possible."""
+
+
+## Replace NERs with meaningful alternatives
+# orginal,obfuscated = replace_ners(text0, ner_replacements)
+
+# print("Original text:", orginal)
+# print("\nObfuscated text:", obfuscated)
+
+# # Replace NERs with meaningful alternatives
+# orginal,obfuscated = replace_ners(text2, ner_replacements)
+
+# print("Original text:\n", orginal)
+# print("\nObfuscated text:\n", obfuscated)
+
+# # Replace NERs with meaningful alternatives
+# orginal,obfuscated = replace_ners(text3, ner_replacements)
+
+# print("Original text:\n", orginal)
+# print("\nObfuscated text:\n", obfuscated)
+
+# # Replace NERs with meaningful alternatives
+# orginal,obfuscated = replace_ners(text4, ner_replacements)
+
+# print("Original text:\n", orginal)
+# print("\nObfuscated text:\n", obfuscated)
+
+# # Replace NERs with meaningful alternatives
+# orginal,obfuscated = replace_ners(text5, ner_replacements)
+
+# print("Original text:\n", orginal)
+# print("\nObfuscated text:\n", obfuscated)
+
+# # Replace NERs with meaningful alternatives
+# orginal,obfuscated = replace_ners(text6, ner_replacements)
+
+# print("Original text:\n", orginal)
+# print("\nObfuscated text:\n", obfuscated)
+
+# # Replace NERs with meaningful alternatives
+# orginal,obfuscated = replace_ners(text7, ner_replacements)
+
+# print("Original text:\n", orginal)
+# print("\nObfuscated text:\n", obfuscated)

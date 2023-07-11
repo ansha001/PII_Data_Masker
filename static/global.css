@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-nunito-sans:
+  "Nunito Sans";
+
+  /* font sizes */
+  --font-size-9xl: 25px;
+  --font-size-6xl: 25px;
+  --font-size-11xl: 30px;
+
+  /* Colors */
+  --color-darkslateblue: #37373a;
+  --color-darkseagreen: rgba(122, 196, 138, 0.87);
+  --color-cornflowerblue: #000000;
+  --color-white: #e0dfe5;
+
+  /* Paddings */
+  --padding-5xs: 8px;
+  --padding-10xl: 29px;
+  --padding-60xl: 79px;
+
+  /* border radiuses */
+  --br-8xs: 5px;
+  --br-5xs: 8px;
+}
+textarea{
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: 10px;
+}

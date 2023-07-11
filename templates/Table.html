@@ -1,0 +1,37 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{% static 'global.css' %}" />
+    <link rel="stylesheet" href="{%static 'Table.css'%}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito Sans:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="table">
+      <h3 class="heading1">
+        <b class="table-text-de-identification">Table De-Identification</b>
+      </h3>
+      <input class="uploadbutton1" type="file" autofocus />
+
+      <div class="input1">
+        <h3 class="input-window1">Input Window</h3>
+        <div class="inputframe1"></div>
+      </div>
+      <div class="output1">
+        <h3 class="input-window1">Output Window</h3>
+        <div class="inputframe1"></div>
+      </div>
+      <button class="export2" autofocus>
+        <p class="export3">Export</p>
+      </button>
+    </div>
+  </body>
+</html>
+{% endblock content %}

@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{% static 'global.css' %}" />
+    <link rel="stylesheet" href="{%static 'index.css'%}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito Sans:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="mainpage">
+      <div class="column1">
+        <div class="sidepanetop">
+        <h3 class="heading5" style="position:absolute;top:50px;left:50px;font-size:36px">PII Data Masker</h3>
+        </div>
+        <div class="menu">
+          <button class="menu-li" autofocus>
+            <h3 class="table-data"><a class="table-data lin" href="/detect" style="text-decoration:none">Categorization</a></h3>
+          </button>
+          <button class="menu-li" autofocus>
+            <h3 class="table-data"><a class="table-data lin" href="/free-text" style="text-decoration:none">Free Text</a></h3>
+          </button>
+          {% comment %} <button class="menu-li" autofocus>
+            <h3 class="table-data"><a class="table-data lin" href="/table" style="text-decoration:none">Table Data</a></h3>
+          </button> {% endcomment %}
+          <button class="menu-li" autofocus>
+            <h3 class="table-data"><a class="table-data lin" href="/document" style="text-decoration:none">Document Data</a></h3>
+          </button>
+          <button class="menu-li" autofocus>
+            <h3 class="table-data"><a class="table-data lin" href="/dicom" style="text-decoration:none">Image Data</a></h3>
+          </button>
+        </div>
+      </div>
+      <div class="column2">
+        {% block content %}
+        {% endblock content %}
+      </div>
+    </div>
+  </body>
+</html>
