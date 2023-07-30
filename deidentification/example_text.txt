@@ -1,15 +1,3 @@
-text= """John visited New York last week. He works at Microsoft, which is located in Redmond. The meeting is scheduled for Monday."""
-
-text = """
-Please follow up with Dr. Smith for further information. John visited New York last week.
-He works at Microsoft, which is located in Redmond. The meeting is scheduled for Monday.
-The possibilities have increased since 2014, especially compared to2012, hè Kees? The system has
-different functions to manipulate data.
-The date is 12–01–2021 (or 12 jan 2021 or 12 januari 2021).
-You can reach me at SarahJ@gmail.com and I live in Rotterdam. My address is Maasstraat 13, 
-1234AB. My name is Thomas de Vries and I have Acne. Oh, I use ranitidine for this.
-"""
-
 
 text1 = "Please contact Dr. Lee for more information about the upcoming surgery. Mary visited Los Angeles last week. She works at Google, which is located in Mountain View. The presentation is scheduled for Thursday. The market has been volatile since the pandemic began, especially in the travel industry. The software has several features to optimize performance. The date is 05/25/2023 (or May 25, 2023). You can reach me at johnsmith@email.com and I live in San Francisco. My address is 123 Main St, Apt 456, 94123. My name is Sarah Jones and I have allergies. I use Claritin for this."
 
@@ -50,6 +38,9 @@ You can reach me at nam@provider.com and I live in Rotterdam. My address is Maas
 
 Thank you."""
 
+
+
+
 text = """
 Patient name: John Doe
 Date of Birth: 01/15/1980
@@ -82,6 +73,10 @@ Age: 35
 Diagnosis: Acute bronchitis
 
 Mr. Smith presented to the clinic with a cough, chest tightness, and shortness of breath. Upon examination, he was found to have wheezing and rhonchi in both lungs. A chest X-ray was ordered and showed no signs of pneumonia. Based on his symptoms and physical exam findings, Mr. Smith was diagnosed with acute bronchitis. He was prescribed an albuterol inhaler and advised to rest and increase his fluid intake. Follow-up was scheduled for one week."""
+
+
+
+
 
 text="""Patient Name: David Lee
 Age: 65
@@ -160,44 +155,116 @@ Physical Exam: Ms. Smith appears uncomfortable and is lying still on the exam ta
 Assessment and Plan: Based on Ms. Smith's history and physical exam findings, she is diagnosed with acute appendicitis. She will be referred to a surgeon for further evaluation and treatment. In the meantime, she will be given nothing by mouth and will be started on intravenous fluids and broad-spectrum antibiotics. She will be prepared for surgery and taken to the operating room as soon as possible."""
 
 
-## Replace NERs with meaningful alternatives
-# orginal,obfuscated = replace_ners(text0, ner_replacements)
 
-# print("Original text:", orginal)
-# print("\nObfuscated text:", obfuscated)
 
-# # Replace NERs with meaningful alternatives
-# orginal,obfuscated = replace_ners(text2, ner_replacements)
 
-# print("Original text:\n", orginal)
-# print("\nObfuscated text:\n", obfuscated)
 
-# # Replace NERs with meaningful alternatives
-# orginal,obfuscated = replace_ners(text3, ner_replacements)
 
-# print("Original text:\n", orginal)
-# print("\nObfuscated text:\n", obfuscated)
+Example text related to finance:
 
-# # Replace NERs with meaningful alternatives
-# orginal,obfuscated = replace_ners(text4, ner_replacements)
+text_fin4 = """
+Loan Application - Small Business Expansion
 
-# print("Original text:\n", orginal)
-# print("\nObfuscated text:\n", obfuscated)
+Dear Loan Officer,
 
-# # Replace NERs with meaningful alternatives
-# orginal,obfuscated = replace_ners(text5, ner_replacements)
+I am writing to apply for a small business loan to fund the expansion of my company, XYZ Tech Solutions. We are a technology consulting firm serving various businesses in the region. The funds from this loan will be utilized to open a new branch office, hire additional staff, and invest in marketing and promotional activities.
 
-# print("Original text:\n", orginal)
-# print("\nObfuscated text:\n", obfuscated)
+Loan Details:
+Requested Loan Amount: $100,000
+Loan Term: 36 months
+Interest Rate: Negotiable (please provide details)
+Intended Use: Business Expansion
 
-# # Replace NERs with meaningful alternatives
-# orginal,obfuscated = replace_ners(text6, ner_replacements)
+Business Overview:
+XYZ Tech Solutions was established in 2010 and has since grown steadily, offering top-notch IT solutions to our clients. Our services include software development, cybersecurity consulting, and cloud infrastructure management. With the increasing demand for technology services in the market, we believe that expanding our operations will allow us to capture new opportunities and better serve our existing clients.
 
-# print("Original text:\n", orginal)
-# print("\nObfuscated text:\n", obfuscated)
+Financial Information:
+Our company's financials for the past three years demonstrate consistent profitability and healthy cash flow. We have attached our audited financial statements for your review.
 
-# # Replace NERs with meaningful alternatives
-# orginal,obfuscated = replace_ners(text7, ner_replacements)
+Collateral:
+As collateral for this loan, we are prepared to offer a lien on our existing office premises, valued at approximately $200,000. We are confident that our sound financial standing and the collateral provided make this loan a secure investment for your institution.
 
-# print("Original text:\n", orginal)
-# print("\nObfuscated text:\n", obfuscated)
+Repayment Plan:
+We have devised a repayment plan that aligns with our projected revenue growth. Monthly installments will commence three months after receiving the loan, giving us ample time to set up the new branch office and generate additional income.
+
+We are excited about the prospects of this expansion and are eager to partner with your esteemed financial institution to achieve our goals. Your support will not only drive our company's growth but also contribute to job creation in the region.
+
+Thank you for considering our loan application. We are available at your convenience to provide any additional information or answer any questions you may have.
+
+Sincerely,
+Jane Doe
+CEO, XYZ Tech Solutions
+"""
+
+
+"""
+
+In the last quarter of 2022, DEF Enterprises experienced an extraordinary financial
+performance, surpassing all expectations. The quarter's total revenue reached a significant 
+milestone of $50 million, signifying a remarkable 15% increase compared to the corresponding 
+period last year. This impressive growth can be attributed to the successful launch of 
+innovative products and a well-planned marketing campaign that effectively expanded the 
+customer base and market share. Moreover, DEF Enterprises achieved a net income of $8 
+million during the quarter, boasting a remarkable 20% growth year-on-year. These outstanding 
+financial outcomes exemplify the company's commitment to financial prudence, investment in 
+cutting-edge technologies, and unwavering dedication to customer satisfaction, laying a 
+solid foundation for future success and sustainable growth.
+
+"""
+
+
+"""
+During the last quarter of 2022, LMN Compliance Solutions exhibited exemplary performance 
+in the legal and regulatory domain. The company achieved notable success in providing 
+comprehensive legal and regulatory compliance solutions to clients, demonstrating a 15% 
+increase in the implementation of proactive compliance initiatives compared to the same period 
+last year. This outstanding growth was a result of LMN's tailored approach, wherein their 
+team of experienced attorneys and compliance experts collaborated closely with clients 
+to address evolving regulatory challenges and mitigate potential legal risks effectively.
+
+Moreover, LMN Compliance Solutions successfully resolved several complex legal cases for 
+clients, ranging from contract disputes to intellectual property matters, leading to a 
+remarkable 20% increase in client satisfaction and positive feedback. Their legal team's 
+adeptness in analyzing intricate legal issues and offering strategic advice played a 
+crucial role in achieving these favorable outcomes, reinforcing LMN's reputation 
+as a trusted and dependable legal partner.
+
+These exceptional outcomes reflect the company's unwavering dedication to upholding 
+legal integrity and safeguarding its clients' interests in a rapidly evolving 
+regulatory landscape. With a focus on delivering innovative solutions and unparalleled 
+expertise, LMN Compliance Solutions is well-positioned to continue its success as 
+a sought-after legal and regulatory partner for businesses seeking to navigate the 
+complex legal landscape with confidence and compliance assurance.
+
+"""
+
+
+
+
+"""
+Please follow up with Mr. Johnson for additional details regarding his recent financial 
+analysis. He works in the finance department at ABC Investments, located in downtown. The 
+meeting to discuss the market outlook is scheduled for Monday. The possibilities of higher 
+returns on investments have significantly increased since 2014, especially when compared 
+to the performance in 2012. The financial system they use has various functions to 
+manipulate and analyze financial data effectively.
+
+The date specified for the report is January 12, 2023 (or 12th January 2023, depending on 
+the date format). For any further inquiries, please contact me at FinanceExpert@email.com. 
+My office address is Wall Street, 1234, New York. My name is Jennifer Roberts, and I am 
+the lead financial analyst. Oh, if you have any questions related to portfolio management, 
+I'll be happy to help you with that! 
+
+"""
+
+
+"""
+Please follow up with Dr. Smith for further information regarding John's recent visit 
+to New York. John is employed at Microsoft, situated in Redmond. There is a scheduled 
+meeting for Monday. Since 2014, the possibilities have increased significantly, 
+particularly when compared to 2012. The system possesses diverse functions to  manipulate 
+data. The date provided is December 1, 2021 (or January 12, 2021, depending on the date format).  
+For contact, you can reach me at SarahJ@gmail.com, and I currently reside in Rotterdam 
+at Maasstraat 13,  postal code 1234AB. I am Thomas de Vries and have Acne, 
+for which I use ranitidine.
+"""

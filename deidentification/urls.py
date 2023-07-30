@@ -8,7 +8,7 @@ urlpatterns = [
     path("free-text/", views.free_text, name="free-text"),
     path("table/", views.table, name="table"),
     path("document/", views.document, name="document"),
-    path("dicom/", views.dicom, name="dicom"),
+    path("image/", views.image, name="image"),
     path('textinput/', views.textinput, name='textinput'),
     path('fileinput/', views.fileinput, name='fileinput'),
 ]

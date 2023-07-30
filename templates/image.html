@@ -31,14 +31,11 @@
         <h3 class="input-window">Output Window</h3>
         <div class="inputframe">
           {% if old_load %}
-          <img src="{% static "./public/temp_img.jpg" %}" alt="output" class="outputimage" />
+          <img src="{% static "./public/masked_image.jpg" %}" alt="output" class="outputimage" />
           {% endif %}
         </div>
       </div>
-      <button class="export" autofocus>
-        <p class="export1">Export</p>
-      </button>
-      <form action="{% url 'dicom' %}" method="post" enctype="multipart/form-data">
+      <form action="{% url 'image' %}" method="post" enctype="multipart/form-data">
         {% csrf_token %}
         <input class="uploadbutton" type="file" name="dicominput" autofocus />
         {% comment %} <button class="export6" style="position:absolute;left:400px;top:200px;height:3% " name="mask">
@@ -46,6 +43,9 @@
         </button> {% endcomment %}
         <button class="export6" style="position:absolute;left:650px;top:200px;height:3%" name="mask">
           <p class="export7">Mask</p>
+        </button>
+        <button class="export" autofocus name="export-img">
+          <p class="export1">Export</p>
         </button>
       </form>
     </div>

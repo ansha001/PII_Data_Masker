@@ -1,10 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 from .categorize import detect_document_type
 from .categorize import extract_words_from_document
 from .obfuscate_mask import replace_ners, ner_replacements, mask
-# import pickle
-# from pathlib import Path
+
 from .image import overlay_ocr_text
+import os
 
 def index(request):
     return render(request, "index.html")
@@ -18,7 +18,6 @@ def textinput(request):
     text_input = request.GET.get("text_input")
     print(text_input)
     result1 = detect_document_type(text_input)
-    # result1 = detection.predict([text_input])
     return render(request, "detection.html", {"result1": result1, "text_input": text_input})
 
 def fileinput(request):
@@ -76,7 +75,6 @@ def document(request):
         file = request.FILES.get('documentinput')
         if file is not None:
             input_text = extract_words_from_document(file)
-            print(input_text)
             input_text = " ".join(input_text)
             if 'mask' in request.POST:
                 option = 'mask'
@@ -104,11 +102,20 @@ def document(request):
 
     return render(request, "document.html",context)
 
-def dicom(request):
+def image(request):
     file = None
     old_load = False
     if request.method == 'POST':
         file = request.FILES.get('dicominput')
+
+
+        if "export-img" in request.POST:
+            image_name = "masked_image.jpg"
+            image_path = os.path.join('static/public',image_name)
+            with open(image_path, 'rb') as image_file:
+                response = HttpResponse(image_file.read(), content_type='image/jpeg')
+                response['Content-Disposition'] = f'attachment; filename={image_name}'
+                return response
 
     if file is not None:
             input_img_path = 'static/public/input_img.jpg'
@@ -122,4 +129,4 @@ def dicom(request):
         'old_load': old_load
     }
 
-    return render(request, "dicom.html",context)
+    return render(request, "image.html",context)

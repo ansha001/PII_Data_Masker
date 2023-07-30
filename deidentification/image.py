@@ -12,35 +12,29 @@ def recognize_text(img_path):
     return reader.readtext(img_path)
 
 def nerr_rrr(text):
-    entities = ["PERSON", "DATE", "ORG", "GPE", "CARDINAL", "MONEY", "PERCENT", "TIME", "QUANTITY", "ORDINAL", "NORP"]
+    entities = ["PERSON", "DATE", "GPE", "MONEY", "PERCENT", "TIME", "QUANTITY", "ORDINAL", "NORP"]
 
     email_pattern = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b"
-
-    # Define the PHI patterns for redaction
-    phi_patterns = {
-        r"\b[A-Z][a-z]+\s[A-Z][a-z]+\b": "Patient name",
-        r"\b\d{2}/\d{2}/\d{4}\b": "Date of Birth",
+    phi_pattern = {
+        r"\b\d{16}\b": "Credit/Debit Card Number",
+        r"\b[A-Za-z]{2}\d{6}\b": "Employee ID",
     }
 
-    blackout_char = "*"
-
+    pii_offsets = []
     doc = nlp(text)
+    for ent in doc.ents:
+        if ent.label_ in entities:
+            pii_offsets.extend(range(ent.start_char, ent.end_char))
 
-    # Replace the identified PHI patterns with blackout characters
-    redacted_text = text
-    for pattern, _ in phi_patterns.items():
-        redacted_text = re.sub(pattern, "*", redacted_text)
-
-    # Replace the identified entities and email addresses with blackout characters
-    doc = nlp(redacted_text)
-    blackout_text = ""
-    for token in doc:
-        if token.ent_type_ in entities or re.match(email_pattern, token.text):
-            blackout_text += blackout_char * len(token.text) + " "
+    # Replace only the identified PII entities with blackout characters
+    redacted_text = ""
+    for i, char in enumerate(text):
+        if i in pii_offsets or re.match(email_pattern, char):
+            redacted_text += "*"
         else:
-            blackout_text += token.text + " "
+            redacted_text += char
 
-    return blackout_text
+    return redacted_text
 
 def overlay_ocr_text(img_path, vertical_offset=0):
     '''Loads an image, recognizes text, and overlays the text on the image.'''
@@ -67,6 +61,5 @@ def overlay_ocr_text(img_path, vertical_offset=0):
                         # Draw a filled rectangle as background for the text
                         img = cv2.rectangle(img, top_left, bottom_right, (0, 0, 0), -1)
 
-    temp_img_path = "static/public/temp_img.jpg"
+    temp_img_path = "static/public/masked_image.jpg"
     cv2.imwrite(temp_img_path, img)
-

@@ -10,45 +10,6 @@ import re
 
 nlp = spacy.load('en_core_web_sm')
 
-ner_replacements = {
-    'PERSON': ['Michael', 'David', 'Sarah'],
-    'NORP': ['Americans', 'Canadians', 'Germans'],
-    'FAC': ['museum', 'stadium', 'theater'],
-    'ORG': ['Google', 'Apple', 'Amazon'],
-    'GPE': ['London', 'Paris', 'Berlin'],
-    'LOC': ['beach', 'mountain', 'forest'],
-    'PRODUCT': ['phone', 'car', 'laptop'],
-    'EVENT': ['conference', 'festival', 'exhibition'],
-    'DATE': ['tomorrow', 'next week', 'in July'],
-    'TIME': ['morning', 'afternoon', 'evening'],
-    'MONEY': ['$100', '$50.75', '€20'],
-    'PERCENT': ['20%', '50%', '75%'],
-    'QUANTITY': ['10 kg', '3 liters', '5 miles'],
-    'ORDINAL': ['first', 'second', 'third'],
-    'CARDINAL': ['one', 'two', 'three']
-}
-
-# Dictionary of replacements for NERs
-ner_replacements = {
-    'PERSON': ['Michael', 'David', 'Sarah'],
-    'NORP': ['Americans', 'Canadians', 'Germans'],
-    'FAC': ['museum', 'stadium', 'theater'],
-    'ORG': ['Google', 'Apple', 'Amazon'],
-    'GPE': ['London', 'Paris', 'Berlin'],
-    'LOC': ['beach', 'mountain', 'forest'],
-    'PRODUCT': ['phone', 'car', 'laptop'],
-    'EVENT': ['conference', 'festival', 'exhibition'],
-    'DATE': ['tomorrow', 'next week', 'in July'],
-    'TIME': ['morning', 'afternoon', 'evening'],
-    'MONEY': ['$100', '$50.75', '€20'],
-    'PERCENT': ['20%', '50%', '75%'],
-    'QUANTITY': ['10 kg', '3 liters', '5 miles'],
-    'ORDINAL': ['first', 'second', 'third'],
-    'CARDINAL': ['one', 'two', 'three'],
-    'EMAIL':['xyz@abc.com','pqr@abc.com']
-}
-
-
 # def replace_ners(text, replacements):
 #     doc = nlp(text)
 #     regex_email = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b"
@@ -132,9 +93,8 @@ ner_replacements = {
 
 
 # Define the entities to extract NER tags for
-entities = ["PERSON", "DATE", "ORG", "GPE", "CARDINAL", "MONEY", "PERCENT", "TIME", "QUANTITY", "ORDINAL", "NORP"]
+entities = ["PERSON", "DATE", "ORG", "GPE", "MONEY", "PERCENT", "NORP"]
 
-# Define the pattern for email identification
 email_pattern = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b"
 
 # Define the PHI patterns for redaction
@@ -148,16 +108,15 @@ phi_patterns = {
     r"\b[A-Z]{3}\d{6}\b": "Certificate/License Number",
     r"\b[A-Z]{3}\d{3}\b": "Vehicle Identifier",
     r"\b[A-Z]{3}\d{3}\b": "Device Identifier",
-    r"\bhttps?://\S+\b": "Web URL",
     r"\b(?:\d{1,3}\.){3}\d{1,3}\b": "IP Address",
     r"\b\w+\s(?:Fingerprint|Voiceprints)\b": "Biometric Identifier",
-    r"\[IMAGE\]": "Full Face Photographic Image",
     r"\b\d{5}\b": "Any Unique Identifying Number",
     r"\[REDACTED\]": "Finger or Voiceprints",
     r"\bEIN\d{6}\b": "Employer Identifier",
-    r"\[REDACTED\]": "DNA Sequence",
     r"\(\d{3}\) \d{3}-\d{4}": "Telephone Number",
-    r"\b[\w\.-]+@[\w\.-]+\.\w+\b": "Email"
+    r"\b[\w\.-]+@[\w\.-]+\.\w+\b": "Email",
+    r"\b\d{16}\b": "Credit/Debit Card Number",
+    r"\b[A-Za-z]{2}\d{6}\b": "Employee ID",
 }
 
 

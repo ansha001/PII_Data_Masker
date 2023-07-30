@@ -30,7 +30,7 @@
         <h3 class="input-window2">Output Window</h3>
         <div class="inputframe2" style="font-size: 16px;line-height: 1.5;padding-left: 10px; color:black">{{ output_text|safe|linebreaksbr }}</div>
       </div>
-      <button class="export4" autofocus>
+      <button class="export4" name="export-doc" autofocus>
         <p class="export5">Export</p>
       </button>
         <form action="{% url 'document' %}" method="post" enctype="multipart/form-data">
